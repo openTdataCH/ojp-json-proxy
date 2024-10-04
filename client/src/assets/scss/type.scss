@@ -1,0 +1,93 @@
+@import "variables";
+
+@font-face {
+  font-family: "Inter Semi-Bold";
+  src: url("../fonts/inter/Inter-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter Regular";
+  font-weight: normal;
+  src: url("../fonts/inter/Inter-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  font-weight: bold;
+  src: url("../fonts/inter/Inter-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter Extra-Bold";
+  font-weight: bold;
+  src: url("../fonts/inter/Inter-ExtraBold.woff2") format("woff2");
+}
+
+
+html {
+  font-size: 15px;
+  line-height: 1.5;
+  color: $pt-main-black;
+  font-family: "Inter Regular", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media #{$media-query-m} {
+    font-size: 17px;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-family: "Inter Extra-Bold", sans-serif;
+    line-height: normal;
+  }
+
+  h2 {
+    margin: 0 0 .5rem;
+    font-size: 2rem;
+    font-family: "Inter Semi-Bold", sans-serif;
+  }
+
+  h3 {
+    margin: 0 0 .5rem;
+    font-size: 1.2rem;
+    font-family: "Inter Semi-Bold", sans-serif;
+  }
+
+  @media #{$media-query-m} {
+    h1 {
+      font-size: 4rem;
+      font-family: "Inter Extra-Bold", sans-serif;
+    }
+
+    h2 {
+      margin: 0 0 .5rem;
+      font-size: 2rem;
+      font-family: "Inter Semi-Bold", sans-serif;
+    }
+
+    h3 {
+      margin: 0 0 .5rem;
+      font-size: 1.2rem;
+      font-family: "Inter Semi-Bold", sans-serif;
+    }
+  }
+
+  p {
+    margin: 0 0 1rem;
+    white-space: pre-line;
+  }
+
+  .text-big {
+    font-size: 1.35rem; // 20px / 15px -> ca. 1.35rem
+  }
+
+  .text-small {
+    font-size: 0.8rem; // 12px / 15px -> .8rem
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

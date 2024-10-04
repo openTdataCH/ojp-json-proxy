@@ -1,0 +1,13 @@
+/Users/cedricwagner/Documents/gitsource/ojp-proxy/Src/Integration/bin/Debug/net8.0/TransportProxy.Integration.deps.json
+/Users/cedricwagner/Documents/gitsource/ojp-proxy/Src/Integration/bin/Debug/net8.0/TransportProxy.Integration.dll
+/Users/cedricwagner/Documents/gitsource/ojp-proxy/Src/Integration/bin/Debug/net8.0/TransportProxy.Integration.pdb
+/Users/cedricwagner/Documents/gitsource/ojp-proxy/Src/Integration/obj/Debug/net8.0/Integration.csproj.AssemblyReference.cache
+/Users/cedricwagner/Documents/gitsource/ojp-proxy/Src/Integration/obj/Debug/net8.0/Integration.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cedricwagner/Documents/gitsource/ojp-proxy/Src/Integration/obj/Debug/net8.0/Integration.AssemblyInfoInputs.cache
+/Users/cedricwagner/Documents/gitsource/ojp-proxy/Src/Integration/obj/Debug/net8.0/Integration.AssemblyInfo.cs
+/Users/cedricwagner/Documents/gitsource/ojp-proxy/Src/Integration/obj/Debug/net8.0/Integration.csproj.CoreCompileInputs.cache
+/Users/cedricwagner/Documents/gitsource/ojp-proxy/Src/Integration/obj/Debug/net8.0/Integration.sourcelink.json
+/Users/cedricwagner/Documents/gitsource/ojp-proxy/Src/Integration/obj/Debug/net8.0/TransportProxy.Integration.dll
+/Users/cedricwagner/Documents/gitsource/ojp-proxy/Src/Integration/obj/Debug/net8.0/refint/TransportProxy.Integration.dll
+/Users/cedricwagner/Documents/gitsource/ojp-proxy/Src/Integration/obj/Debug/net8.0/TransportProxy.Integration.pdb
+/Users/cedricwagner/Documents/gitsource/ojp-proxy/Src/Integration/obj/Debug/net8.0/ref/TransportProxy.Integration.dll

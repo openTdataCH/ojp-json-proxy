@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration", "Src\Integration\Integration.csproj", "{85A29125-2884-41A5-B1F1-947A09C4EEF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Src\Api\Api.csproj", "{65F095B9-49C5-456F-A1B5-E12B65574D77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{F9CFBF8D-E2F4-4474-A616-1B9D9204B62D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C9FC2F4F-8DAF-4B27-BFC7-941ABDB505E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Tests", "Tests\Api.Tests\Api.Tests.csproj", "{4DD5B573-54E1-47BD-8941-CD15CFC31F11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85A29125-2884-41A5-B1F1-947A09C4EEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85A29125-2884-41A5-B1F1-947A09C4EEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85A29125-2884-41A5-B1F1-947A09C4EEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85A29125-2884-41A5-B1F1-947A09C4EEF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F095B9-49C5-456F-A1B5-E12B65574D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F095B9-49C5-456F-A1B5-E12B65574D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F095B9-49C5-456F-A1B5-E12B65574D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F095B9-49C5-456F-A1B5-E12B65574D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DD5B573-54E1-47BD-8941-CD15CFC31F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DD5B573-54E1-47BD-8941-CD15CFC31F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DD5B573-54E1-47BD-8941-CD15CFC31F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DD5B573-54E1-47BD-8941-CD15CFC31F11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65F095B9-49C5-456F-A1B5-E12B65574D77} = {F9CFBF8D-E2F4-4474-A616-1B9D9204B62D}
+		{85A29125-2884-41A5-B1F1-947A09C4EEF9} = {F9CFBF8D-E2F4-4474-A616-1B9D9204B62D}
+		{4DD5B573-54E1-47BD-8941-CD15CFC31F11} = {C9FC2F4F-8DAF-4B27-BFC7-941ABDB505E4}
+	EndGlobalSection
+EndGlobal

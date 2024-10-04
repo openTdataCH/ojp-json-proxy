@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OJP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ojp="http://www.vdv.de/ojp"
+     xmlns="http://www.siri.org.uk/siri"
+     version="1.0" xsi:schemaLocation="http://www.siri.org.uk/siri ../ojp-xsd-v1.0/OJP.xsd">
+    <OJPRequest>
+        <ServiceRequest>
+            <RequestTimestamp>{{ now }}</RequestTimestamp>
+            <RequestorRef>API-Explorer</RequestorRef>
+            <ojp:OJPStopEventRequest>
+                <RequestTimestamp>{{ now }}</RequestTimestamp>
+                <ojp:Location>
+                    <ojp:PlaceRef>
+                        <StopPlaceRef>{{ stopref }}</StopPlaceRef>
+                        <ojp:LocationName>
+                            <ojp:Text>{{ location }}</ojp:Text>
+                        </ojp:LocationName>
+                    </ojp:PlaceRef>
+                    <ojp:DepArrTime>{{ datetime }}</ojp:DepArrTime>
+                </ojp:Location>
+                <ojp:Params>
+                    <NumberOfResults>{{ limit }}</NumberOfResults>
+                    <StopEventType>{{ type }}</StopEventType>
+                    <IncludePreviousCalls>{{ prevcalls }}</IncludePreviousCalls>
+                    <IncludeOnwardCalls>{{ onwardcalls }}</IncludeOnwardCalls>
+                    <IncludeRealtimeData>true</IncludeRealtimeData>
+                    <!--<ojp:PtModeFilter>
+                        <ojp:Mode>
+                            <ojp:Exclude>true</ojp:Exclude>
+                            <ojp:PtMode>bus</ojp:PtMode>
+                            <siri:BusSubmode>localBusService</siri:BusSubmode>
+                        </ojp:Mode>
+                    </ojp:PtModeFilter>-->
+                </ojp:Params>
+            </ojp:OJPStopEventRequest>
+        </ServiceRequest>
+    </OJPRequest>
+</OJP>

@@ -1,0 +1,116 @@
+{
+  "apiErrors": {
+    "generic": "Kontaktieren Sie den Administrator oder versuchen Sie es erneut",
+    "auth": {
+      "tokenMissing": "Wahrscheinlich haben Sie vergessen, ein Token bereitzustellen."
+    },
+    "templating": {
+      "argumentError": "Argument-Fehler. Kontaktieren Sie den Administrator oder versuchen Sie es erneut",
+      "runtimeError": "Templating-Fehler. Kontaktieren Sie den Administrator oder versuchen Sie es erneut"
+    },
+    "ojp": {
+      "generic": "Es gibt ein Problem mit dem OJP-Service...",
+      "forbidden": "Ist Ihr Token gültig?",
+      "tooManyRequests": "Genießen Sie eine ☕️ bevor Sie die nächste Anfrage stellen"
+    },
+    "deserialize": {
+      "generic": "Modell-Fehler. Kontaktieren Sie den Administrator oder versuchen Sie es erneut"
+    }
+  },
+  "page": {
+    "home": {
+      "title": "Ihr One-Way-Stop für alle relevanten Daten zum öffentlichen Verkehr in der Schweiz",
+      "intro": "Dieses Projekt wurde von zwei Studenten der FHNW während der Projektphase erstellt. Unser Ziel ist es, einen Proxy für den von unserem Kunden SKI+ bereitgestellten OJP-Service zu erstellen und Antworten in einem entwicklerfreundlicheren Format bereitzustellen. Erkunden Sie unsere API und beginnen Sie noch heute mit der Nutzung der Schweizer Verkehrsdaten!",
+      "featureCardDoc": {
+        "title": "Dokumentation",
+        "text": "Beginnen Sie mit unserer umfassenden API-Dokumentation und integrieren Sie noch heute Schweizer Verkehrsdaten in Ihre Anwendung."
+      },
+      "featureCardLIR": {
+        "title": "Standortinformationen",
+        "text": "Rufen Sie schnell die eindeutige ID für jeden Bahnhof in der Schweiz ab. Verwenden Sie unseren Location Information Request-Endpunkt, um genaue Stationsdaten zu erhalten, die für präzise Verkehrsabfragen unerlässlich sind."
+      },
+      "featureCardStationBoard": {
+        "title": "Abfahrtsanzeige",
+        "text": "Erfahren Sie, wie Sie eine dynamische Abfahrtsanzeige erstellen, die abfahrende Züge für jeden Standort anzeigt. Erkunden Sie unsere Demo-Anwendung und sehen Sie den Station Board-Endpunkt in Aktion."
+      }
+    },
+    "demo": {
+      "index": "Demo",
+      "timeTable": "Fahrplan",
+      "steps": {
+        "LIR": "Zuerst müssen Sie eine ID für die Station abrufen, für die Sie weitere Informationen erhalten möchten. Geben Sie dazu einen Namen ein und die API gibt eine Liste potenzieller Übereinstimmungen zurück, die nach Wahrscheinlichkeit geordnet sind. Dies kann auch für eine Dropdown-Liste oder die Autovervollständigung verwendet werden, wie in unserer Demo-Anwendung gezeigt.",
+        "StationBoard": "Anschließend können Sie den genauen Standortnamen oder die StationRef-Kennung aus dem vorherigen Schritt eingeben, um eine Liste aller abfahrenden Züge oder Busse von diesem Standort zu erhalten."
+      }
+    },
+    "docs": {
+      "index": "Dokumentation",
+      "introduction": "Einführung",
+      "gettingStarted": "Erste Schritte",
+      "endpoints": "Endpunkte",
+      "locationInformation": "Standortinformationen",
+      "stationBoard": "Abfahrtsanzeige",
+      "readMore": "mehr in unserer Dokumentation lesen",
+      "table": {
+        "header": {
+          "name": "Name",
+          "description": "Beschreibung",
+          "example": "Beispiel"
+        },
+        "required": "erforderlich",
+        "optional": "optional",
+        "description": {
+          "station": "Gibt den Standortnamen an, nach dem gesucht werden soll",
+          "id": "Die StationRef für den eingegebenen Standortnamen",
+          "datetime": "Spezifisches Datum für die Abfahrtsanzeige",
+          "limit": "Begrenzt die Anzahl der Antworten",
+          "stationName": "Gibt den Standortnamen an, nach dem gesucht werden soll"
+        }
+      }
+    }
+  },
+  "action": {
+    "getStarted": "Loslegen",
+    "goToSwagger": "Zu Swagger wechseln",
+    "curlToClipBoard": "Kopiere Curl-Befehl",
+    "send": "Senden",
+    "details": "Details",
+    "contactSki": "Kontaktieren Sie SKI+"
+  },
+  "docsIntroduction": {
+    "header": "Willkommen zur OJP-Explorer-Dokumentation!\nDieser Leitfaden hilft Ihnen beim Einstieg in den Zugriff auf und die Nutzung der API, um Daten zum öffentlichen Verkehr in der Schweiz abzurufen."
+  },
+  "docsGettingStarted": {
+    "header": "Willkommen zur OJP-Explorer-Dokumentation!\nDieser Leitfaden hilft Ihnen beim Einstieg in den Zugriff auf und die Nutzung der API, um Daten zum öffentlichen Verkehr in der Schweiz abzurufen.",
+    "step1": {
+      "title": "Holen Sie sich Ihren Schlüssel",
+      "description": "Um Ihre Anfragen zu authentifizieren, benötigen Sie einen API-Schlüssel. Sie können einen API-Schlüssel erhalten, indem Sie sich auf dem offiziellen OJP-Entwicklerportal anmelden.\n Sie finden das Entwicklerportal unter folgendem Link: {link}\n\nDieser API-Schlüssel muss im Authorization-Header Ihrer HTTP-Anfragen enthalten sein.\n\nFür alle Demos auf dem OJP-Explorer können Sie Ihren API-Schlüssel mit der Option oben rechts auf der Seite festlegen. Die Option ist wie folgt gekennzeichnet."
+    },
+    "step2": {
+      "title": "StationRef-Kennung abrufen",
+      "description": "Zuerst müssen Sie eine ID für die Station abrufen, für die Sie weitere Informationen erhalten möchten. Geben Sie dazu einen Namen ein und die API gibt eine Liste potenzieller Übereinstimmungen zurück, die nach Wahrscheinlichkeit geordnet sind."
+    },
+    "step3": {
+      "title": "StationBoard abrufen",
+      "description": "Anschließend können Sie den genauen Standortnamen oder die StationRef-Kennung aus dem vorherigen Schritt eingeben, um eine Liste aller abfahrenden Züge oder Busse von diesem Standort zu erhalten. Diese Informationen könnten Sie in Ihrer nächsten Implementierung Ihrer lokalen Abfahrtsanzeige verwenden."
+    }
+  },
+  "docsStationBoard": {
+    "ojpResponse": "Das Folgende zeigt die Antwort, die der OJP-Service beim Abfragen des OJPStopEventRequest-Endpunkts sendet.",
+    "ojpProxyResponse": "Die oben gezeigte Antwort des OJP-Service wird in unserem OJP-Proxy-Backend in JSON übersetzt. Das Ergebnis sieht wie folgt aus."
+  },
+  "docsLocationInformation": {
+    "ojpResponse": "Das Folgende zeigt die Antwort, die der OJP-Service beim Abfragen des OJPLocationInformationRequest-Endpunkts sendet.",
+    "ojpProxyResponse": "Die oben gezeigte Antwort des OJP-Service wird in unserem OJP-Proxy-Backend in JSON übersetzt. Das Ergebnis sieht wie folgt aus."
+  },
+
+  "ui": {
+    "apiToken": "Dein API-Schlüssel",
+    "apiTokenDescription": "Damit du den OJP-Proxy verwendet kannst musst du einen API-Schlüssel auf dem OJP-Developer Portal registrieren.",
+    "apiTokenRenew": "Neuen API Schlüssel anfordern",
+    "apiTokenSet" : "API key",
+    "apiTokenNotSet": "Set API key",
+    "save": "speichern",
+    "clear": "löschen",
+    "close": "schliessen"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "apiErrors": {
+    "generic": "Contact Admin or try again",
+    "auth": {
+      "tokenMissing": "Most likely you forgot to provide a token."
+    },
+    "templating": {
+      "argumentError": "Argument-Error. Contact Admin or try again",
+      "runtimeError": "Templating-Error. Contact Admin or try again"
+    },
+    "ojp": {
+      "generic": "There is an issue with the OJP-Service...",
+      "forbidden": "Is your token valid?",
+      "tooManyRequests": "Enjoy a ☕️ before making the next request"
+    },
+    "deserialize": {
+      "generic": "Model-Error. Contact Admin or try again"
+    }
+  },
+  "page": {
+    "home": {
+      "title": "your one way stop to get all relevant data for swiss public transport",
+      "intro" : "This project was created by two students from the FHNW during during the project track. Our goal is to create a proxy for the OJP-Service provided by our customer SKI+ and provide responses in a more developer friendly format. Explore our API and start building with Swiss transport data today!",
+      "featureCardDoc": {
+        "title": "documentation",
+        "text": "Get started with our comprehensive API documentation and integrate Swiss public transport data into your application today."
+      },
+      "featureCardLIR": {
+        "title": "location information",
+        "text": "Quickly retrieve the unique ID for any train station in Switzerland. Use our Location Information Request endpoint to get precise station data, essential for making accurate transportation queries."
+      },
+      "featureCardStationBoard": {
+        "title": "station board",
+        "text": "Discover how to create a dynamic station board displaying departing trains for any location. Explore our demo application and see the Station Board endpoint in action."
+      }
+    },
+    "demo": {
+      "index": "Demo",
+      "timeTable": "TimeTable",
+      "steps": {
+        "LIR": "First you need to retrieve an id for your station that you want to get further information on. For this enter a name and the API returns a list of potential matches ordered by probability. This can also be used for a dropdown list or autocompletion as seen in our demo application.",
+        "StationBoard" : "Next you can enter the precise location Name or the StationRef identifier from the previous step to get a list of all departing trains or busses from this location."
+      }
+    },
+    "docs": {
+      "index": "Docs",
+      "introduction": "Introduction",
+      "gettingStarted": "Getting Started",
+      "endpoints": "Endpoints",
+      "locationInformation": "Location Information",
+      "stationBoard": "Station Board",
+      "readMore": "read more in our docs",
+      "table": {
+        "header": {
+          "name": "name",
+          "description": "description",
+          "example": "example"
+        },
+        "required": "required",
+        "optional": "optional",
+        "description": {
+            "station": "Specifies the location name to search for",
+            "id": "The stationRef for the entered location name",
+            "datetime": "Specific date for the station board",
+            "limit": "limits the amount of responses",
+            "stationName": "Specifies the location name to search for"
+        }
+      }
+    }
+  },
+  "action": {
+    "getStarted": "Get started",
+    "goToSwagger": "Go To Swagger",
+    "curlToClipBoard": "Copy curl cmd",
+    "send": "Send",
+    "details": "Details",
+    "contactSki": "Contact SKI+"
+  },
+
+  "docsIntroduction": {
+    "header": "Welcome to the OJP-Explorer documentation!\nThis guide will help you get started with accessing and using the API to retrieve data about Swiss public transport."
+  },
+
+  "docsGettingStarted": {
+    "header": "Welcome to the OJP-Explorer documentation!\nThis guide will help you get started with accessing and using the API to retrieve data about Swiss public transport.",
+    "step1": {
+      "title": "Get your Key",
+      "description": "To authenticate your requests, you need an API key. You can obtain an API key by signing up on the official OJP-Developer portal.\n You can find the developer portal under the following link: {link}\n\nThis API key needs to be included in the Authorization header of your HTTP requests.\n\nFor all demos on the OJP-Explorer, you can set your API key using the option at the top-right of the page. The option is indicated like the following button."
+    },
+    "step2": {
+      "title": "Retrieve StationRef identifier",
+      "description": "First you need to retrieve an id for your station that you want to get further information on. For this enter a name and the API returns a list of potential matches ordered by probability."
+    },
+    "step3": {
+      "title": "Fetch the StationBoard",
+      "description": "Next you can enter the precise location Name or the StationRef identifier from the previous step to get a list of all departing trains or busses from this location. This information you could use in your next implementation of you local station board."
+    }
+  },
+
+  "docsStationBoard": {
+    "ojpResponse": "The following shows the response which the OJP-Service sends when querying the OJPStopEventRequest endpoint.",
+    "ojpProxyResponse": "The response shown above from the OJP-Service gets translated into JSON in our OJP-Proxy backend the result looks like this."
+  },
+
+  "docsLocationInformation": {
+    "ojpResponse": "The following shows the response which the OJP-Service sends when querying the OJPLocationInformationRequest endpoint.",
+    "ojpProxyResponse": "The response shown above from the OJP-Service gets translated into JSON in our OJP-Proxy backend the result looks like this."
+  },
+
+  "ui": {
+    "apiToken": "Your API key",
+    "apiTokenDescription": "For the API to work you need to create an API Key on the OJP Developer Portal",
+    "apiTokenRenew": "Get a new API key",
+    "save": "save",
+    "clear": "clear",
+    "close": "close"
+  }
+}

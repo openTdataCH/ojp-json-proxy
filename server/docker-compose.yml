@@ -1,0 +1,41 @@
+version: '3'
+
+networks:
+  monitoring:
+    driver: bridge
+
+services:
+  prometheus:
+    image: prom/prometheus
+    container_name: ojp-prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      - prometheus-data:/prometheus
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    restart: always
+    networks:
+      - monitoring
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+ 
+  grafana:
+    image: grafana/grafana
+    restart: always
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml
+      - ./monitoring/dashboards/:/etc/grafana/provisioning/dashboards/
+    ports:
+      - 4000:3000
+    networks:
+      - monitoring
+    depends_on:
+      - prometheus
+  
+
+
+volumes:
+  prometheus-data: {}
+  grafana-data: {}

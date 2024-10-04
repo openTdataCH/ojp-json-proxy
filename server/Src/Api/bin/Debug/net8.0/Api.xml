@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="M:Api.Controllers.V1.TransportDataController.GetStationBoard(System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32})">
+            <summary>
+            -
+            </summary>
+            <remarks>
+            The "stationBoard" endpoint provides a list of outgoing connections from a specified location.
+            This information can be used for creating a station-board for a specific location.
+            </remarks>
+            <param name="station">Here is the description for ID.</param>
+            <param name="id">The stationRef identifier</param>
+            <param name="dateTimeString">Datetime in xxx Format</param>
+            <param name="limit">Result count</param>
+        </member>
+        <member name="M:Api.Controllers.V1.TransportDataController.GetLocationInformation(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            -
+            </summary>
+            <remarks>
+            This endpoint provides you with a list of locations matching your parameter.
+            You can use this for receiving a list of locations for easy selection as well
+            as the location id needed for other endpoints.
+            </remarks>
+            <param name="locationName">The location Name</param>
+            <param name="limit">Result count</param>
+        </member>
+        <member name="M:Api.Controllers.V2.TransportDataController.GetStationBoard(System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32})">
+            <summary>
+            -
+            </summary>
+            <remarks>
+            The "stationBoard" endpoint provides a list of outgoing connections from a specified location.
+            This information can be used for creating a station-board for a specific location.
+            </remarks>
+            <param name="station">Here is the description for ID.</param>
+            <param name="id">The stationRef identifier</param>
+            <param name="dateTimeString">Datetime in xxx Format</param>
+            <param name="limit">Result count</param>
+        </member>
+        <member name="M:Api.Controllers.V2.TransportDataController.GetLocationInformation(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            -
+            </summary>
+            <remarks>
+            This endpoint provides you with a list of locations matching your parameter.
+            You can use this for receiving a list of locations for easy selection as well
+            as the location id needed for other endpoints.
+            </remarks>
+            <param name="locationName">The location Name</param>
+            <param name="limit">Result count</param>
+        </member>
+    </members>
+</doc>
